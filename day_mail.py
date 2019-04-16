@@ -4,6 +4,8 @@ import poplib
 import email
 import os
 import time
+import schedule
+from wxpy import *
 from email.parser import Parser
 from email.header import decode_header
 from email.utils import parseaddr
@@ -71,48 +73,65 @@ def get_email_content(message, savepath,datestr):
              attach.close()
     return attachments
 
+def job():
+    bot.file_helper.send('哈喽 World!！')
+
+def day_mail():
+       email = 'lnxnycsq@163.com'
+       # password= input('请输入密码: ')
+       password='ln2018'
+       pop3_server = 'pop.163.com'
+       server = poplib.POP3_SSL(pop3_server)
+       # 可以打开或关闭调试信息:
+       server.set_debuglevel(0)
+       # POP3服务器的欢迎文字:
+       print(server.getwelcome())
+        # 身份认证:
+       server.user(email)
+       server.pass_(password)
+       # stat()返回邮件数量和占用空间:
+       msg_count, msg_size = server.stat()
+       print('message count:', msg_count)
+       print('message size:', msg_size, 'bytes')
+       # b'+OK 237 174238271' list()响应的状态/邮件数量/邮件占用的空间大小
+       resp, mails, octets = server.list()
+
+       for i in range(1, msg_count+1):
+           resp, byte_lines, octets = server.retr(i)
+           # 转码
+           str_lines = []
+           for x in byte_lines:
+               str_lines.append(x.decode())
+               # 拼接邮件内容
+           msg_content = '\n'.join(str_lines)
+           # 把邮件内容解析为Message对象
+           msg = Parser().parsestr(msg_content)
+           headers = get_email_headers(msg)
+
+           attachments = get_email_content(msg, r'F:\0\py_ribao',datestr)
+           print('subject:', headers['Subject'])
+           print('attachments: ', attachments)
+       bot.file_helper.send('完成')
+       server.quit()
 if __name__ == '__main__':
     # 账户信息
-    email = 'lnxnycsq@163.com'
-    password= input('请输入密码: ')
-    pop3_server = 'pop.163.com'
-    # 连接到POP3服务器，带SSL的:
-    server = poplib.POP3_SSL(pop3_server)
-    # 可以打开或关闭调试信息:
-    server.set_debuglevel(0)
-    # POP3服务器的欢迎文字:
-    print(server.getwelcome())
-    # 身份认证:
-    server.user(email)
-    server.pass_(password)
-    # stat()返回邮件数量和占用空间:
-    msg_count, msg_size = server.stat()
-    print('message count:', msg_count)
-    print('message size:', msg_size, 'bytes')
-    # b'+OK 237 174238271' list()响应的状态/邮件数量/邮件占用的空间大小
-    resp, mails, octets = server.list()
+    bot=Bot(cache_path=True)
+
     datestr = input('请输入起始日期(如20190401): ')
-    for i in range(1, msg_count):
-        resp, byte_lines, octets = server.retr(i)
-        # 转码
-        str_lines = []
-        for x in byte_lines:
-            str_lines.append(x.decode())
-        # 拼接邮件内容
-        msg_content = '\n'.join(str_lines)
-        # 把邮件内容解析为Message对象
-        msg = Parser().parsestr(msg_content)
-        headers = get_email_headers(msg)
+    # 连接到POP3服务器，带SSL的:
+    #schedule.every().day.at("11:06").do(job)
+    #day_mail()
+    schedule.every().day.at("11:57").do(day_mail)
+    while True:
+        schedule.run_pending()#确保schedule一直运行
+        time.sleep(30)
+    bot.join()
+        # print('subject:', headers['Subject'])
+        # print('from:', headers['From'])
+        # print('to:', headers['To'])
+        # if 'cc' in headers:
+        #     print('cc:', headers['Cc'])
+        # print('date:', headers['Date'])
+        # print('attachments: ', attachments)
+        # print('-----------------------------')
 
-        attachments = get_email_content(msg, r'F:\0\py_ribao',datestr)
-
-        print('subject:', headers['Subject'])
-        print('from:', headers['From'])
-        print('to:', headers['To'])
-        if 'cc' in headers:
-            print('cc:', headers['Cc'])
-        print('date:', headers['Date'])
-        print('attachments: ', attachments)
-        print('-----------------------------')
-
-    server.quit()
