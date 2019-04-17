@@ -95,6 +95,9 @@ def day_mail():
        print('message size:', msg_size, 'bytes')
        # b'+OK 237 174238271' list()响应的状态/邮件数量/邮件占用的空间大小
        resp, mails, octets = server.list()
+       namelist=[]
+       namestr=""
+       namelist1=[]
 
        for i in range(1, msg_count+1):
            resp, byte_lines, octets = server.retr(i)
@@ -111,6 +114,19 @@ def day_mail():
            attachments = get_email_content(msg, r'F:\0\py_ribao',datestr)
            print('subject:', headers['Subject'])
            print('attachments: ', attachments)
+           namelist.append(attachments)
+           namelist1+=attachments
+           #namelist1.join(attachments)
+       temp=['内蒙','靖边','干北','诺木洪','新疆','河北','江苏','敦煌','共和','山东','尧生']
+       namestr=''.join(namelist1)
+
+       for ch in temp:
+            if  ch in namestr:
+                bot.file_helper.send(ch+'完成')
+                time.sleep(1)
+            else:
+                bot.file_helper.send(ch+"未完成")
+                time.sleep(1)
        bot.file_helper.send('完成')
        server.quit()
 if __name__ == '__main__':
@@ -120,8 +136,8 @@ if __name__ == '__main__':
     datestr = input('请输入起始日期(如20190401): ')
     # 连接到POP3服务器，带SSL的:
     #schedule.every().day.at("11:06").do(job)
-    #day_mail()
-    schedule.every().day.at("11:57").do(day_mail)
+    day_mail()
+   # schedule.every().day.at("11:57").do(day_mail)
     while True:
         schedule.run_pending()#确保schedule一直运行
         time.sleep(30)

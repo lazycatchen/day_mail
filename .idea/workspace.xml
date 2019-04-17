@@ -28,11 +28,12 @@
       <file leaf-file-name="day_mail.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day_mail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.714765">
-              <caret line="128" column="39" selection-start-line="128" selection-start-column="39" selection-end-line="128" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.6944444">
+              <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
               <folding>
                 <element signature="e#25#38#0" expanded="true" />
                 <element signature="e#443#1716#0" expanded="false" />
+                <element signature="e#1773#2420#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -117,7 +118,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -138,6 +138,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunManager" selected="Python.day_mail">
@@ -338,25 +339,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1384" height="738" extended-state="6" />
+    <frame x="-9" y="-9" width="1384" height="738" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14637789" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32642487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3939394" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4300518" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32642487" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51724136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49011856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48877373" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22793148" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3862069" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -386,8 +387,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/day_mail.py</url>
-          <line>122</line>
+          <line>138</line>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/day_mail.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -397,9 +403,16 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="31" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="attachments" />
+        <watch expression="namelist" />
+        <watch expression="temp" />
+        <watch expression="namelist1" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/day_mail.py">
@@ -409,6 +422,37 @@
           <folding>
             <element signature="e#25#38#0" expanded="true" />
             <element signature="e#443#1716#0" expanded="false" />
+            <element signature="e#1773#2420#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_mail - 副本.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/m_wechat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_mail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#38#0" expanded="true" />
+            <element signature="e#443#1716#0" expanded="false" />
+            <element signature="e#1773#2420#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -430,6 +474,7 @@
           <folding>
             <element signature="e#25#38#0" expanded="true" />
             <element signature="e#443#1716#0" expanded="false" />
+            <element signature="e#1773#2420#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -459,6 +504,7 @@
           <folding>
             <element signature="e#25#38#0" expanded="true" />
             <element signature="e#443#1716#0" expanded="false" />
+            <element signature="e#1773#2420#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -480,6 +526,7 @@
           <folding>
             <element signature="e#25#38#0" expanded="true" />
             <element signature="e#443#1716#0" expanded="false" />
+            <element signature="e#1773#2420#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -501,6 +548,7 @@
           <folding>
             <element signature="e#25#38#0" expanded="true" />
             <element signature="e#443#1716#0" expanded="false" />
+            <element signature="e#1773#2420#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -512,19 +560,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/poplib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5185185">
           <caret line="433" column="0" selection-start-line="433" selection-start-column="0" selection-end-line="433" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -546,13 +585,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43609023">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5263157">
+          <caret line="2403" column="0" selection-start-line="2403" selection-start-column="0" selection-end-line="2403" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day_mail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.714765">
-          <caret line="128" column="39" selection-start-line="128" selection-start-column="39" selection-end-line="128" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.6944444">
+          <caret line="129" column="33" selection-start-line="129" selection-start-column="33" selection-end-line="129" selection-end-column="33" />
           <folding>
             <element signature="e#25#38#0" expanded="true" />
             <element signature="e#443#1716#0" expanded="false" />
+            <element signature="e#1773#2420#0" expanded="false" />
           </folding>
         </state>
       </provider>
