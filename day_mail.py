@@ -122,17 +122,18 @@ def day_mail():
 
        for ch in temp:
             if  ch in namestr:
-                bot.file_helper.send(ch+'完成')
+                my_friend.send(ch+'完成')
                 time.sleep(1)
             else:
-                bot.file_helper.send(ch+"未完成")
+                my_friend.send(ch+"未完成")
                 time.sleep(1)
        bot.file_helper.send('完成')
        server.quit()
 if __name__ == '__main__':
     # 账户信息
     bot=Bot(cache_path=True)
-
+    my_friend = bot.friends().search(u'ssss')[0]
+    my_friend.send('哈喽')
     datestr = input('请输入起始日期(如20190401): ')
     # 连接到POP3服务器，带SSL的:
     #schedule.every().day.at("11:06").do(job)
