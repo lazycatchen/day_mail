@@ -112,22 +112,26 @@ def day_mail():
            headers = get_email_headers(msg)
 
            attachments = get_email_content(msg, r'F:\0\py_ribao',datestr)
-           print('subject:', headers['Subject'])
-           print('attachments: ', attachments)
+           #print('subject:', headers['Subject'])
+           #print('attachments: ', attachments)
            namelist.append(attachments)
            namelist1+=attachments
            #namelist1.join(attachments)
        temp=['内蒙','靖边','干北','诺木洪','新疆','河北','江苏','敦煌','共和','山东','尧生']
        namestr=''.join(namelist1)
-
+       messagesend=""
        for ch in temp:
             if  ch in namestr:
                 my_friend.send(ch+'完成')
                 time.sleep(1)
+
             else:
-                my_friend.send(ch+"未完成")
+                messagesend=messagesend+ch+"、"
+                #my_friend.send(ch+"未完成")
                 time.sleep(1)
-       bot.file_helper.send('完成')
+       #    bot.file_helper.send('完成')
+       if messagesend:
+            my_friend.send('请'+messagesend+'公司（风电场、光伏电站）尽快报送日报')
        server.quit()
 if __name__ == '__main__':
     # 账户信息
@@ -138,7 +142,8 @@ if __name__ == '__main__':
     # 连接到POP3服务器，带SSL的:
     #schedule.every().day.at("11:06").do(job)
     day_mail()
-   # schedule.every().day.at("11:57").do(day_mail)
+    schedule.every().day.at("10:20").do(day_mail)
+    schedule.every().day.at("10:40").do(day_mail)
     while True:
         schedule.run_pending()#确保schedule一直运行
         time.sleep(30)
