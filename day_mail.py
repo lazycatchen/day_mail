@@ -142,11 +142,16 @@ if __name__ == '__main__':
     # 连接到POP3服务器，带SSL的:
     #schedule.every().day.at("11:06").do(job)
     day_mail()
-    schedule.every().day.at("10:20").do(day_mail)
-    schedule.every().day.at("10:40").do(day_mail)
+    schedule.every().day.at("10:30").do(day_mail)
+    schedule.every().day.at("11:00").do(day_mail)
+    schedule.every().day.at("11:20").do(day_mail)
+    schedule.every().day.at("11:30").do(day_mail)
+    schedule.every().day.at("08:52").do(day_mail)
+    schedule.every().day.at("09:30").do(day_mail)
+    schedule.every().day.at("10:00").do(day_mail)
     while True:
         schedule.run_pending()#确保schedule一直运行
-        time.sleep(30)
+        time.sleep(5)
     bot.join()
         # print('subject:', headers['Subject'])
         # print('from:', headers['From'])
