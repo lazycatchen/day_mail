@@ -111,7 +111,7 @@ def day_mail():
            msg = Parser().parsestr(msg_content)
            headers = get_email_headers(msg)
 
-           attachments = get_email_content(msg, r'F:\0\py_ribao',datestr)
+           attachments = get_email_content(msg, path,datestr)
            #print('subject:', headers['Subject'])
            #print('attachments: ', attachments)
            namelist.append(attachments)
@@ -131,7 +131,7 @@ def day_mail():
                 time.sleep(1)
        #    bot.file_helper.send('完成')
        if messagesend:
-            my_friend.send('请'+messagesend+'公司（风电场、光伏电站）尽快报送日报')
+            my_friend.send('请'+messagesend[:-1]+'公司（风电场、光伏电站）尽快报送日报')
        server.quit()
 if __name__ == '__main__':
     # 账户信息
@@ -139,6 +139,13 @@ if __name__ == '__main__':
     my_friend = bot.friends().search(u'ssss')[0]
     my_friend.send('哈喽')
     datestr = input('请输入起始日期(如20190401): ')
+
+    path='F:\\0\\py_ribao\\'+datestr
+    isExists=os.path.exists(path)
+    if not isExists:
+        os.makedirs(path)
+    else:
+        print(path+' 目录已存在')
     # 连接到POP3服务器，带SSL的:
     #schedule.every().day.at("11:06").do(job)
     day_mail()
@@ -149,6 +156,9 @@ if __name__ == '__main__':
     schedule.every().day.at("08:52").do(day_mail)
     schedule.every().day.at("09:30").do(day_mail)
     schedule.every().day.at("10:00").do(day_mail)
+    schedule.every().day.at("14:00").do(day_mail)
+    schedule.every().day.at("14:30").do(day_mail)
+    schedule.every().day.at("15:00").do(day_mail)
     while True:
         schedule.run_pending()#确保schedule一直运行
         time.sleep(5)
