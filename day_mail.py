@@ -134,7 +134,7 @@ def day_mail():
             my_friend.send('请'+messagesend[:-1]+'公司（风电场、光伏电站）尽快报送日报')  #未完成的场站
        else:
           pathtable=exceldata.exceltable(path)   #完成之后制作日报
-          excel2pict.e2p(pathtable)   #将日报转图片发送到微信群
+          pathtable2=excel2pict.e2p(pathtable)   #将日报转图片发送到微信群
        server.quit()
 if __name__ == '__main__':
     # 账户信息
@@ -156,6 +156,10 @@ if __name__ == '__main__':
     #pathtable=exceldata.exceltable(path)
     ##pathpict=excel2pict.e2p(pathtable)
     #my_friend.send_image(pathpict)
+
+    #pathtable=exceldata.exceltable('F:\\0\\py_ribao\\20190529')  ##
+    picture=excel2pict.e2p('F:\\0\\py_ribao\\py_save\\py日报模板.xls')
+    my_friend.send_image(picture)
     day_mail()          #执行一次邮件下载程序
     schedule.every().day.at("09:10").do(day_mail)
     schedule.every().day.at("10:30").do(day_mail)

@@ -2,7 +2,8 @@
 import xlrd
 import os
 import xlwt
-
+from xlrd import open_workbook
+from xlutils.copy import copy
 
 def forder(filename): #返回字典键
     new_flist=[]
@@ -15,11 +16,17 @@ def forder(filename): #返回字典键
     return chx
 def exceltable(path):
     g = os.walk(path)
-    pypath='F:\\0\\py_ribao\\py_save\\py日报模板.xls'
-    wb = xlrd.open_workbook(pypath)
-    ws = wb.sheet_by_name('Sheet1')
+    #pypath='F:\\0\\py_ribao\\py_save\\py日报模板.xls'
+    #wb = xlrd.open_workbook(pypath)
+    #ws = wb.sheet_by_name('Sheet1')   #修改日报模板，生产日报
+    rb = open_workbook('F:\\0\\py_ribao\\py_save\\py日报模板.xls', formatting_info=True)
+    wb1 = copy(rb)
+    ws = wb1.get_sheet(0)
+    #ws.write(0, 0, 'changed!')
+    #wb1.save('F:\\0\\py_ribao\\py_save\\py日报模板.xls')
 
-    pathtable=path+'\\table.xls'
+    pathtable='F:\\0\\py_ribao\\py_save\\table.xls'
+    pathtable1='F:\\0\\py_ribao\\py_save\\py日报模板.xls'
     for path,dir_list,file_list in g:
         listdata=[]
         fileorder=[]
@@ -27,20 +34,28 @@ def exceltable(path):
         xls_result= xlwt.Workbook()
         sht1 = xls_result.add_sheet('Sheet1',cell_overwrite_ok=True)
         j=0
+
+        if int(path[-2:])<10:
+            nowdate=int(path[-1])-1
+        else:
+            nowdate=int(path[-2:])-1
+            #
         for file_name in file_list:
             #fileorder.append(forder(file_name))
             data = xlrd.open_workbook(os.path.join(path, file_name))
             names = data.sheet_names()
             table = data.sheets()[len(names)-1]
             ch=forder(file_name)
+            #
+
             if ch=='新疆':
                 table=data.sheets()[len(names)-2]
             if ch=='诺木洪' or ch=='共和':
-                date1=str(int(path[-1])-1)
+                date1=str(nowdate)
                 table=data.sheet_by_name(date1)
             if ch=='靖边':
-                date1=str(int(path[-1])-1)+'日'
-                table=data.sheet_by_name(date1)
+                date1=str(nowdate)+'日'
+                table=data.sheet_by_name(date1)##### error1
                 #table=data.sheets()[-1]
 
     #for temp in rang(1:15_):
@@ -51,13 +66,17 @@ def exceltable(path):
                     listdata.append(temp2)
                     for i,data in enumerate(temp2):
                         sht1.write(j,0,ch)
+                        ws.write(j,0,ch)#
                         sht1.write(j,i+1,data)
+
+                        ws.write(j,i+1,data)#
                         templist.append(temp2) #单表数据提取
             #dictdata[ch]=templist  #结果存字典
         xls_result.save(pathtable)
-        ws.save(pathtable)
-        
-        return pathtable
+        #ws.save(pathtable)
+        #ws.write(0, 0, 'changed!')
+        wb1.save('F:\\0\\py_ribao\\py_save\\py日报模板.xls')
+        return pathtable1
 
 
 
