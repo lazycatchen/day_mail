@@ -123,19 +123,20 @@ def day_mail():
        for ch in temp:    #寻找有无未发送文件的公司
             if  ch in namestr:
                 my_friend.send(ch+'完成')   #完成的场站
-                time.sleep(1)
+                time.sleep(0.5)
 
             else:
                 messagesend=messagesend+ch+"、"
                 #my_friend.send(ch+"未完成")
-                time.sleep(1)
+                time.sleep(0.5)
        #    bot.file_helper.send('完成')
        if messagesend:
             my_friend.send('请'+messagesend[:-1]+'公司（风电场、光伏电站）尽快报送日报')  #未完成的场站
        else:
           pathtable=exceldata.exceltable(path)   #完成之后制作日报
-          pathtable2=excel2pict.e2p(pathtable)   #将日报转图片发送到微信群
-       server.quit()
+          picture=excel2pict.e2p(pathtable)   #将日报转图片发送到微信群
+          my_friend.send_image(picture)
+       #server.quit()
 if __name__ == '__main__':
     # 账户信息
     bot=Bot(cache_path=True)
@@ -158,8 +159,8 @@ if __name__ == '__main__':
     #my_friend.send_image(pathpict)
 
     #pathtable=exceldata.exceltable('F:\\0\\py_ribao\\20190529')  ##
-    picture=excel2pict.e2p('F:\\0\\py_ribao\\py_save\\py日报模板.xls')
-    my_friend.send_image(picture)
+    #picture=excel2pict.e2p('F:\\0\\py_ribao\\py_save\\py日报模板.xls')
+    #my_friend.send_image(picture)
     day_mail()          #执行一次邮件下载程序
     schedule.every().day.at("09:10").do(day_mail)
     schedule.every().day.at("10:30").do(day_mail)
@@ -176,7 +177,7 @@ if __name__ == '__main__':
 
     while True:
         schedule.run_pending()#确保schedule一直运行
-        time.sleep(5)
+        time.sleep(1)
     bot.join()
         # print('subject:', headers['Subject'])
         # print('from:', headers['From'])

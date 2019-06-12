@@ -1,7 +1,8 @@
 # _*_ coding: utf-8 _*_
-import win32com.client as wc
-pypath='F:\\0\\py_ribao\\20190502\\table - 副本 (2).xls'
-app = wc.Dispatch('Excel.Application')
-xls = app.WorkBooks.Open(pypath)
-app.Run('日报测试')
+import excel2pict
+import exceldata
+#x=excel2pict.e2p('F:\\0\\py_ribao\\py_save\\py日报模板.xls')
+exceldata.exceltable('F:\\0\\py_ribao\\20190612')
+
+
 

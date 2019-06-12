@@ -14,6 +14,14 @@ def forder(filename): #返回字典键
              new_flist=temp.index(ch)
              chx=ch
     return chx
+
+def custom_key(word):
+   numbers = []
+   orderstr=[ '内蒙', '靖边','干北','诺木洪','新疆','河北','江苏','敦煌','共和','山东','尧生']
+   temp=[i for i, word1 in enumerate(orderstr) if word1 in word]
+   numbers.append(temp)
+   return numbers
+
 def exceltable(path):
     g = os.walk(path)
     #pypath='F:\\0\\py_ribao\\py_save\\py日报模板.xls'
@@ -26,8 +34,11 @@ def exceltable(path):
     #wb1.save('F:\\0\\py_ribao\\py_save\\py日报模板.xls')
 
     pathtable='F:\\0\\py_ribao\\py_save\\table.xls'
-    pathtable1='F:\\0\\py_ribao\\py_save\\py日报模板.xls'
+
     for path,dir_list,file_list in g:
+        ##########排序!
+        file_list.sort(key=custom_key)
+        ##
         listdata=[]
         fileorder=[]
         dictdata={}
@@ -55,8 +66,8 @@ def exceltable(path):
                 table=data.sheet_by_name(date1)
             if ch=='靖边':
                 date1=str(nowdate)+'日'
-                table=data.sheet_by_name(date1)##### error1
-                #table=data.sheets()[-1]
+                #table=data.sheet_by_name(date1)##### error1
+                table=data.sheets()[nowdate-1]
 
     #for temp in rang(1:15_):
             templist=[]
@@ -71,11 +82,16 @@ def exceltable(path):
 
                         ws.write(j,i+1,data)#
                         templist.append(temp2) #单表数据提取
+        #datessa=[int(path[-1])-1,int(path[-2:])]
+        sht1.write(0,0,int(path[-3]))
+        sht1.write(0,1,int(path[-2:])-1)
+        #templist.append(datessa)
             #dictdata[ch]=templist  #结果存字典
         xls_result.save(pathtable)
         #ws.save(pathtable)
         #ws.write(0, 0, 'changed!')
-        wb1.save('F:\\0\\py_ribao\\py_save\\py日报模板.xls')
+        #wb1.sav)
+        pathtable1='F:\\0\\py_ribao\\py_save\\'+str(nowdate)+'日'
         return pathtable1
 
 
