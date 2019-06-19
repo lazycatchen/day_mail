@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/exceldata.py" line="64" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="335b852c-7b57-445a-ad2e-12e7d0ae2e45" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wxpy.pkl" afterPath="$PROJECT_DIR$/wxpy.pkl" />
@@ -7,7 +10,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day_mail.py" afterPath="$PROJECT_DIR$/day_mail.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/excel2pict.py" afterPath="$PROJECT_DIR$/excel2pict.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exceldata.py" afterPath="$PROJECT_DIR$/exceldata.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testtable.py" afterPath="$PROJECT_DIR$/testtable.py" />
     </list>
     <ignored path="day_mail.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,13 +33,24 @@
       <file leaf-file-name="day_mail.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day_mail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69552237">
-              <caret line="136" column="59" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.6756757">
+              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
               <folding>
-                <element signature="e#25#38#0" expanded="true" />
                 <element signature="e#273#444#0" expanded="false" />
                 <element signature="e#478#1751#0" expanded="false" />
+                <element signature="e#1807#2471#0" expanded="false" />
+                <element signature="e#2497#4503#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wenku1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../文库/wenku1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,9 +59,11 @@
         <entry file="file://$PROJECT_DIR$/exceldata.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
+                <element signature="e#153#310#0" expanded="false" />
+                <element signature="e#337#544#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -92,9 +107,9 @@
         <entry file="file://$PROJECT_DIR$/excel2pict.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
               <folding>
-                <element signature="e#1#12#0" expanded="true" />
+                <element signature="e#24#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,17 +175,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -191,10 +195,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../文库/wenkuclass.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../文库/wenku1.py" />
   </component>
   <component name="RunManager" selected="Python.day_mail">
     <configuration default="false" name="day_mail" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -452,18 +467,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="720" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07645723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18925057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32642487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4265976" sideWeight="0.50560117" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27633852" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3244207" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34581104" sideWeight="0.4943988" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4163701" sideWeight="0.4943988" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.486631" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4688057" sideWeight="0.4943988" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5498221" sideWeight="0.4943988" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -493,18 +508,8 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/day_mail.py</url>
-          <line>163</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/testtable.py</url>
           <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/excel2pict.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="100" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/testtable.py</url>
@@ -513,7 +518,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/day_mail.py</url>
-          <line>137</line>
+          <line>129</line>
           <option name="timeStamp" value="120" />
         </line-breakpoint>
       </breakpoints>
@@ -524,46 +529,19 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="121" />
+      <option name="time" value="124" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/m_wechat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_rbdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day_mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
-          <folding>
-            <element signature="e#25#38#0" expanded="true" />
-            <element signature="e#273#444#0" expanded="false" />
-            <element signature="e#478#1751#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/exceldata.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
+            <element signature="e#153#310#0" expanded="false" />
+            <element signature="e#337#544#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -598,9 +576,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#38#0" expanded="true" />
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -635,9 +614,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#38#0" expanded="true" />
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -672,9 +652,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#38#0" expanded="true" />
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -702,9 +683,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#38#0" expanded="true" />
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -732,9 +714,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#38#0" expanded="true" />
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -754,9 +737,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="49" />
           <folding>
-            <element signature="e#25#38#0" expanded="true" />
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -783,9 +767,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#38#0" expanded="true" />
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -805,9 +790,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="109" column="17" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
           <folding>
-            <element signature="e#25#38#0" expanded="true" />
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -827,9 +813,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#25#38#0" expanded="true" />
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -925,10 +912,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/xlrd/book.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33105803">
+          <caret line="472" column="0" selection-start-line="472" selection-start-column="0" selection-end-line="472" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../文库/wenku1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testtable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/day_mail - 副本.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/wxpy/utils/misc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itchat/storage/templates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -943,19 +971,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/xlrd/book.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33105803">
-          <caret line="472" column="0" selection-start-line="472" selection-start-column="0" selection-end-line="472" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testtable.py">
+    <entry file="file://$PROJECT_DIR$/excel2pict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
           <folding>
-            <element signature="e#24#41#0" expanded="true" />
+            <element signature="e#24#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -963,31 +984,24 @@
     <entry file="file://$PROJECT_DIR$/exceldata.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/excel2pict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding>
-            <element signature="e#1#12#0" expanded="true" />
+            <element signature="e#153#310#0" expanded="false" />
+            <element signature="e#337#544#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day_mail.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69552237">
-          <caret line="136" column="59" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.6756757">
+          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
           <folding>
-            <element signature="e#25#38#0" expanded="true" />
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>

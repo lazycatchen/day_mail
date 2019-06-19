@@ -56,14 +56,13 @@ def get_email_headers(msg):
     return headers
 
 def get_email_content(message, savepath,datestr):
-
     attachments = []
     for part in message.walk():
         filename = part.get_filename()
         if filename:
            date1  = time.strptime(message.get("Date")[0:24],'%a, %d %b %Y %H:%M:%S') #格式化收件时间
            date2 = time.strftime("%Y%m%d", date1)
-           if date2!=datestr:
+           if date2!=datestr:    #寻找指定日期的邮件并下载
               break
            else:
              filename = decode_str(filename)
@@ -100,23 +99,19 @@ def day_mail():
        namelist1=[]
 
        for i in range(1, msg_count+1):
-           resp, byte_lines, octets = server.retr(i)
-           # 转码
+           resp, byte_lines, octets = server.retr(i)  # 转码
            str_lines = []
            for x in byte_lines:
-               str_lines.append(x.decode())
-               # 拼接邮件内容
-           msg_content = '\n'.join(str_lines)
-           # 把邮件内容解析为Message对象
+               str_lines.append(x.decode()) # 拼接邮件内容
+           msg_content = '\n'.join(str_lines)  # 把邮件内容解析为Message对象
            msg = Parser().parsestr(msg_content)
            #headers = get_email_headers(msg)
-
            attachments = get_email_content(msg, path,datestr)
            #print('subject:', headers['Subject'])
            print('attachments: ', attachments)
            namelist.append(attachments)
            namelist1+=attachments
-           #namelist1.join(attachments)
+
        temp=['内蒙','靖边','干北','诺木洪','新疆','河北','江苏','敦煌','共和','山东','尧生']
        namestr=''.join(namelist1)   #文件夹名字合并
        messagesend=""
@@ -124,67 +119,39 @@ def day_mail():
             if  ch in namestr:
                 my_friend.send(ch+'完成')   #完成的场站
                 time.sleep(0.5)
-
             else:
                 messagesend=messagesend+ch+"、"
-                #my_friend.send(ch+"未完成")
                 time.sleep(0.5)
-       #    bot.file_helper.send('完成')
        if messagesend:
             my_friend.send('请'+messagesend[:-1]+'公司（风电场、光伏电站）尽快报送日报')  #未完成的场站
        else:
           pathtable=exceldata.exceltable(path)   #完成之后制作日报
-          picture=excel2pict.e2p(pathtable)   #将日报转图片发送到微信群
-          my_friend.send_image(picture)
-       #server.quit()
+          picture=excel2pict.e2p(pathtable)   #制作日报
+          #my_friend.send_image(picture)
+          ribao_groups.send_image(picture)   #将日报转图片发送到微信群
+          sys.exit()
+
 if __name__ == '__main__':
     # 账户信息
     bot=Bot(cache_path=True)
     my_friend = bot.friends().search(u'ssss')[0]  #寻找微信收件人名字
-    #my_friend = bot.groups().search(u'阿佛加德罗')[0]
+    ribao_groups = bot.groups().search(u'日报')[0]
 
     my_friend.send('test')
+    ribao_groups.send('test')
     datestr = input('请输入起始日期(如20190401): ')   #接受邮件的日期
 
-    path='F:\\0\\py_ribao\\'+datestr  #存储并以日期命名文件夹
+    path='F:\\0\\py_ribao\\'+datestr  #存储并以日期命名文件夹，不存在则创建文件夹
     isExists=os.path.exists(path)
     if not isExists:
         os.makedirs(path)
     else:
         print(path+' 目录已存在')
-    # 连接到POP3服务器，带SSL的:
-    #schedule.every().day.at("11:06").do(job)
-    #pathtable=exceldata.exceltable(path)
-    ##pathpict=excel2pict.e2p(pathtable)
-    #my_friend.send_image(pathpict)
-
-    #pathtable=exceldata.exceltable('F:\\0\\py_ribao\\20190529')  ##
-    #picture=excel2pict.e2p('F:\\0\\py_ribao\\py_save\\py日报模板.xls')
-    #my_friend.send_image(picture)
     day_mail()          #执行一次邮件下载程序
-    schedule.every().day.at("09:10").do(day_mail)
-    schedule.every().day.at("10:30").do(day_mail)
-    schedule.every().day.at("11:00").do(day_mail)
-    schedule.every().day.at("11:20").do(day_mail)
-    schedule.every().day.at("11:30").do(day_mail)
-    schedule.every().day.at("08:52").do(day_mail)
-    schedule.every().day.at("09:30").do(day_mail)
-    schedule.every().day.at("09:50").do(day_mail)
-    schedule.every().day.at("10:00").do(day_mail)
-    schedule.every().day.at("14:00").do(day_mail)
-    schedule.every().day.at("14:30").do(day_mail)
-    schedule.every().day.at("15:00").do(day_mail)
-
+    schedule.every(5).minutes.do(day_mail) #每隔三分钟执行一次
+    #schedule.every().day.at("09:10").do(day_mail)
     while True:
         schedule.run_pending()#确保schedule一直运行
         time.sleep(1)
     bot.join()
-        # print('subject:', headers['Subject'])
-        # print('from:', headers['From'])
-        # print('to:', headers['To'])
-        # if 'cc' in headers:
-        #     print('cc:', headers['Cc'])
-        # print('date:', headers['Date'])
-        # print('attachments: ', attachments)
-        # print('-----------------------------')
 
