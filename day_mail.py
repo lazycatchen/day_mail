@@ -134,11 +134,10 @@ def day_mail():
 if __name__ == '__main__':
     # 账户信息
     bot=Bot(cache_path=True)
-    my_friend = bot.friends().search(u'ssss')[0]  #寻找微信收件人名字
+    my_friend = bot.friends().search(u'ssss')[0]  #寻找微信-收件人名字
     ribao_groups = bot.groups().search(u'日报')[0]
-
     my_friend.send('test')
-    ribao_groups.send('test')
+    #ribao_groups.send('test')
     datestr = input('请输入起始日期(如20190401): ')   #接受邮件的日期
 
     path='F:\\0\\py_ribao\\'+datestr  #存储并以日期命名文件夹，不存在则创建文件夹
@@ -148,10 +147,10 @@ if __name__ == '__main__':
     else:
         print(path+' 目录已存在')
     day_mail()          #执行一次邮件下载程序
-    schedule.every(5).minutes.do(day_mail) #每隔三分钟执行一次
+    schedule.every(10).minutes.do(day_mail) #每隔三分钟执行一次
     #schedule.every().day.at("09:10").do(day_mail)
     while True:
         schedule.run_pending()#确保schedule一直运行
-        time.sleep(1)
+        time.sleep(0.5)
     bot.join()
 

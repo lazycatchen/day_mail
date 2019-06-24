@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="335b852c-7b57-445a-ad2e-12e7d0ae2e45" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/add_excel.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wxpy.pkl" afterPath="$PROJECT_DIR$/wxpy.pkl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day_mail.py" afterPath="$PROJECT_DIR$/day_mail.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/excel2pict.py" afterPath="$PROJECT_DIR$/excel2pict.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exceldata.py" afterPath="$PROJECT_DIR$/exceldata.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testtable.py" afterPath="$PROJECT_DIR$/testtable.py" />
     </list>
     <ignored path="day_mail.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,36 +31,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="day_mail.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="day_mail.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day_mail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6756757">
-              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
               <folding>
                 <element signature="e#273#444#0" expanded="false" />
                 <element signature="e#478#1751#0" expanded="false" />
                 <element signature="e#1807#2471#0" expanded="false" />
-                <element signature="e#2497#4503#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wenku1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../文库/wenku1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exceldata.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="exceldata.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/exceldata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4347826">
+              <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
                 <element signature="e#153#310#0" expanded="false" />
@@ -69,11 +59,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="add_excel.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/add_excel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="testtable.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testtable.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#24#41#0" expanded="true" />
               </folding>
@@ -107,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/excel2pict.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -139,10 +141,11 @@
         <option value="$PROJECT_DIR$/get_rbdata.py" />
         <option value="$PROJECT_DIR$/../文库/wenku.py" />
         <option value="$PROJECT_DIR$/../文库/wenkuclass.py" />
-        <option value="$PROJECT_DIR$/testtable.py" />
-        <option value="$PROJECT_DIR$/exceldata.py" />
         <option value="$PROJECT_DIR$/excel2pict.py" />
         <option value="$PROJECT_DIR$/day_mail.py" />
+        <option value="$PROJECT_DIR$/exceldata.py" />
+        <option value="$PROJECT_DIR$/testtable.py" />
+        <option value="$PROJECT_DIR$/add_excel.py" />
       </list>
     </option>
   </component>
@@ -211,7 +214,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../文库/wenku1.py" />
   </component>
-  <component name="RunManager" selected="Python.day_mail">
+  <component name="RunManager" selected="Python.testtable">
     <configuration default="false" name="day_mail" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -435,8 +438,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.day_mail" />
-        <item index="1" class="java.lang.String" itemvalue="Python.testtable" />
+        <item index="0" class="java.lang.String" itemvalue="Python.testtable" />
+        <item index="1" class="java.lang.String" itemvalue="Python.day_mail" />
         <item index="2" class="java.lang.String" itemvalue="Python.wenkuclass" />
         <item index="3" class="java.lang.String" itemvalue="Python.wenku" />
         <item index="4" class="java.lang.String" itemvalue="Python.exceldata" />
@@ -474,7 +477,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4265976" sideWeight="0.50560117" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27633852" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3244207" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4163701" sideWeight="0.4943988" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3291815" sideWeight="0.4943988" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981076" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.486631" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -512,14 +515,14 @@
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/testtable.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/day_mail.py</url>
           <line>129</line>
           <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/exceldata.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="126" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -529,19 +532,44 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="124" />
+      <option name="time" value="127" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/exceldata.py">
+    <entry file="file://$PROJECT_DIR$/day_mail - 副本.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/m_wechat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_rbdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_mail.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#24#35#0" expanded="true" />
-            <element signature="e#153#310#0" expanded="false" />
-            <element signature="e#337#544#0" expanded="false" />
+            <element signature="e#273#444#0" expanded="false" />
+            <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -579,7 +607,6 @@
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
             <element signature="e#1807#2471#0" expanded="false" />
-            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -617,45 +644,6 @@
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
             <element signature="e#1807#2471#0" expanded="false" />
-            <element signature="e#2497#4503#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day_mail - 副本.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/m_wechat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/get_rbdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="32" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day_mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#273#444#0" expanded="false" />
-            <element signature="e#478#1751#0" expanded="false" />
-            <element signature="e#1807#2471#0" expanded="false" />
-            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -686,7 +674,6 @@
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
             <element signature="e#1807#2471#0" expanded="false" />
-            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -717,7 +704,6 @@
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
             <element signature="e#1807#2471#0" expanded="false" />
-            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -740,7 +726,6 @@
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
             <element signature="e#1807#2471#0" expanded="false" />
-            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -770,7 +755,6 @@
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
             <element signature="e#1807#2471#0" expanded="false" />
-            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -793,7 +777,6 @@
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
             <element signature="e#1807#2471#0" expanded="false" />
-            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -816,7 +799,6 @@
             <element signature="e#273#444#0" expanded="false" />
             <element signature="e#478#1751#0" expanded="false" />
             <element signature="e#1807#2471#0" expanded="false" />
-            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -919,44 +901,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../文库/wenku1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testtable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day_mail - 副本.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/wxpy/utils/misc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
           <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/itchat/storage/templates.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.40184757">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../文库/wenku1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -971,10 +933,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/day_mail - 副本.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="93" column="16" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testtable.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/excel2pict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_mail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding>
+            <element signature="e#273#444#0" expanded="false" />
+            <element signature="e#478#1751#0" expanded="false" />
+            <element signature="e#1807#2471#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_excel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
           </folding>
@@ -983,25 +985,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exceldata.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4347826">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
           <folding>
             <element signature="e#24#35#0" expanded="true" />
             <element signature="e#153#310#0" expanded="false" />
             <element signature="e#337#544#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day_mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6756757">
-          <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-          <folding>
-            <element signature="e#273#444#0" expanded="false" />
-            <element signature="e#478#1751#0" expanded="false" />
-            <element signature="e#1807#2471#0" expanded="false" />
-            <element signature="e#2497#4503#0" expanded="false" />
           </folding>
         </state>
       </provider>
