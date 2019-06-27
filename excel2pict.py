@@ -8,7 +8,7 @@ def e2p(pathpicture):
         wb=excel.workbooks.open(pathtable)
         excel.Run('日报测试')    #运行vba
         wb.Close(SaveChanges=1)     #保存
-        time.sleep(0.1)
+        time.sleep(0.3)
         wb=excel.workbooks.open(pathtable)     #打开文件，复制截图
         w_pic=wb.worksheets('Sheet2')
         w_pic.Range('B2:F36').CopyPicture()

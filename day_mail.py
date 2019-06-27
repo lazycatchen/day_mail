@@ -127,15 +127,15 @@ def day_mail():
        else:
           pathtable=exceldata.exceltable(path)   #完成之后制作日报
           picture=excel2pict.e2p(pathtable)   #制作日报
-          #my_friend.send_image(picture)
-          ribao_groups.send_image(picture)   #将日报转图片发送到微信群
+          my_friend.send_image(picture)
+          #ribao_groups.send_image(picture)   #将日报转图片发送到微信群
           sys.exit()
 
 if __name__ == '__main__':
     # 账户信息
     bot=Bot(cache_path=True)
     my_friend = bot.friends().search(u'ssss')[0]  #寻找微信-收件人名字
-    ribao_groups = bot.groups().search(u'日报')[0]
+    #ribao_groups = bot.groups().search(u'日报')[0]
     my_friend.send('test')
     #ribao_groups.send('test')
     datestr = input('请输入起始日期(如20190401): ')   #接受邮件的日期
@@ -151,6 +151,6 @@ if __name__ == '__main__':
     #schedule.every().day.at("09:10").do(day_mail)
     while True:
         schedule.run_pending()#确保schedule一直运行
-        time.sleep(0.5)
+        time.sleep(1)
     bot.join()
 

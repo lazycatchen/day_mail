@@ -64,9 +64,6 @@ def exceltable(path):
         sht1.write(0,0,int(path[-3]))   #存储到模板
         sht1.write(0,1,int(path[-2:])-1)
         xls_result.save(pathtable)
-
-        datestr = input('请输入起始日期(如20190401): ')   #接受邮件的日期
-        path='F:\\0\\py_ribao\\'+datestr  #存储并以日期命名文件夹，不存在则创建文件夹
         pathtable1='F:\\0\\py_ribao\\py_save\\'+str(nowdate)
         return pathtable1
 
