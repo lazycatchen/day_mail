@@ -7,6 +7,7 @@ import time
 import schedule
 import exceldata
 import excel2pict
+import search_Emax
 from wxpy import *
 from email.parser import Parser
 from email.header import decode_header
@@ -128,6 +129,8 @@ def day_mail():
           pathtable=exceldata.exceltable(path)   #完成之后制作日报
           picture=excel2pict.e2p(pathtable)   #制作日报
           my_friend.send_image(picture)
+          maxele=search_Emax.maxnum()
+          my_friend.send(maxele)
           #ribao_groups.send_image(picture)   #将日报转图片发送到微信群
           sys.exit()
 
