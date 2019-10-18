@@ -7,7 +7,7 @@ from xlutils.copy import copy
 
 def forder(filename): #返回字典键
     chx=''
-    temp=['内蒙','靖边','干北','诺木洪','新疆','河北','江苏','敦煌','共和','山东','尧生']
+    temp=['内蒙','靖边','干北','诺木洪','新疆','河北','江苏','敦煌','共和','山东','尧生','光热']  #re1
     for ch in temp:
          if  ch in filename:
              chx=ch
@@ -15,7 +15,7 @@ def forder(filename): #返回字典键
 
 def custom_key(word):
    numbers = []
-   orderstr=[ '内蒙', '靖边','干北','诺木洪','新疆','河北','江苏','敦煌','共和','山东','尧生']   #以order顺序读取文件
+   orderstr=[ '内蒙', '靖边','干北','诺木洪','新疆','河北','江苏','敦煌','共和','山东','尧生','光热']  #re1 #以order顺序读取文件
    temp=[i for i, word1 in enumerate(orderstr) if word1 in word]
    numbers.append(temp)
    return numbers
@@ -44,7 +44,7 @@ def exceltable(path):
 
             if ch=='新疆':               #新疆隐藏了一张sheet
                 table=data.sheets()[len(names)-2]
-            if ch=='诺木洪' or ch=='共和':   #青海按日期命名
+            if ch=='诺木洪' or ch=='共和'or ch=='光热':   #r1#青海按日期命名
                 date1=str(nowdate)
                 table=data.sheet_by_name(date1)
             if ch=='靖边':                #靖边随缘命名
@@ -61,8 +61,8 @@ def exceltable(path):
                         sht1.write(j,i+1,data)
                        # ws.write(j,i+1,data)  #
                         templist.append(temp2) #单表数据提取
-        sht1.write(0,0,int(path[-3]))   #存储到模板
-        sht1.write(0,1,int(path[-2:])-1)
+        sht1.write(0,0,int(path[-4:-2]))   #存储到模板
+        sht1.write(0,1,int(path[-2:])-1)##日期
         xls_result.save(pathtable)
         pathtable1='F:\\0\\py_ribao\\py_save\\'+str(nowdate)
         return pathtable1
