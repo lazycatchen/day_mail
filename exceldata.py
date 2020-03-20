@@ -1,7 +1,9 @@
 # _*_ coding: utf-8 _*_
 import xlrd
 import os
+import time
 import xlwt
+from openpyxl import load_workbook,Workbook
 from xlrd import open_workbook
 from xlutils.copy import copy
 
@@ -20,7 +22,7 @@ def custom_key(word):
    numbers.append(temp)
    return numbers
 
-def exceltable(path):
+def exceltable(path,datetable):
     g = os.walk(path)
     rb = open_workbook('F:\\0\\py_ribao\\py_save\\py日报模板.xls', formatting_info=True)
    # wb1 = copy(rb)              #读取模板内容，模板相当于本地数据库存储的是月、年总的信息，需要每月调整一次
@@ -32,22 +34,24 @@ def exceltable(path):
         xls_result= xlwt.Workbook()
         sht1 = xls_result.add_sheet('Sheet1',cell_overwrite_ok=True)   #写入sheet1文件
         j=0
-        if int(path[-2:])<10:
-            nowdate=int(path[-1])-1     #读取不同文件中的日期。小于10日即1-9，为1位数，其余为2位数
+        if int(datetable[-2:])<10:
+            nowdate=int(datetable[-1])-1     #读取不同文件中的日期。小于10日即1-9，为1位数，其余为2位数
         else:
-            nowdate=int(path[-2:])-1
+            nowdate=int(datetable[-2:])-1
         for file_name in file_list:   #遍历文件夹，依次读取文件
             data = xlrd.open_workbook(os.path.join(path, file_name))
             names = data.sheet_names()
-            table = data.sheets()[len(names)-1] #读取文件至table，大部分场站把当天文件放到了最后一张sheet，新疆、青海、陕西自行命名
-            ch=forder(file_name)
+            #table = data.sheets()[len(names)-1] #读取文件至table，大部分场站把当天文件放到了最后一张sheet，新疆、青海、陕西自行命名
 
+            ch=forder(file_name)
             if ch=='新疆':               #新疆隐藏了一张sheet
-                table=data.sheets()[len(names)-2]
-            if ch=='诺木洪' or ch=='共和'or ch=='光热':   #r1#青海按日期命名
+                table=data.sheets()[nowdate-1+60]
+            elif ch=='诺木洪' or ch=='共和'or ch=='光热':   #r1#青海按日期命名
                 date1=str(nowdate)
                 table=data.sheet_by_name(date1)
-            if ch=='靖边':                #靖边随缘命名
+            elif ch=='靖边':                #靖边随缘命名
+                table=data.sheets()[nowdate-1]
+            else:
                 table=data.sheets()[nowdate-1]
 
             templist=[]
@@ -61,9 +65,13 @@ def exceltable(path):
                         sht1.write(j,i+1,data)
                        # ws.write(j,i+1,data)  #
                         templist.append(temp2) #单表数据提取
-        sht1.write(0,0,int(path[-4:-2]))   #存储到模板
-        sht1.write(0,1,int(path[-2:])-1)##日期
+        sht1.write(0,0,int(datetable[-4:-2]))   #存储到模板
+        sht1.write(0,1,int(datetable[-2:])-1)##日期
         xls_result.save(pathtable)
+        wb = Workbook()
+        wb.save(datetable+'.xls')
+        time.sleep(1)
+        xls_result.save(datetable+'.xls')
         pathtable1='F:\\0\\py_ribao\\py_save\\'+str(nowdate)
         return pathtable1
 

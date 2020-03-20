@@ -63,16 +63,21 @@ def get_email_content(message, savepath,datestr):
         if filename:
            date1  = time.strptime(message.get("Date")[0:24],'%a, %d %b %Y %H:%M:%S') #格式化收件时间
            date2 = time.strftime("%Y%m%d", date1)
-           if date2!=datestr:    #寻找指定日期的邮件并下载
+           # if date2!=datestr:    #寻找指定日期的邮件并下载
+           if date2>datestr:
               break
            else:
-             filename = decode_str(filename)
-             data = part.get_payload(decode=True)
-             abs_filename = os.path.join(savepath, filename)
-             attach = open(abs_filename, 'wb')
-             attachments.append(filename)
-             attach.write(data)
-             attach.close()
+               try:
+                     filename = decode_str(filename)
+                     data = part.get_payload(decode=True)
+                     abs_filename = os.path.join(savepath, filename)
+                     attach = open(abs_filename, 'wb')
+                     attachments.append(filename)
+                     attach.write(data)
+                     attach.close()
+               except Exception as e:
+                   print(e)
+                   continue
     return attachments
 
 
