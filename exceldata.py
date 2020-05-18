@@ -45,14 +45,22 @@ def exceltable(path,datetable):
 
             ch=forder(file_name)
             if ch=='新疆':               #新疆隐藏了一张sheet
-                table=data.sheets()[nowdate-1+60]
+                print(ch)
+                table=data.sheets()[nowdate-1+121]
+
             elif ch=='诺木洪' or ch=='共和'or ch=='光热':   #r1#青海按日期命名
                 date1=str(nowdate)
+                print(ch)
                 table=data.sheet_by_name(date1)
+
             elif ch=='靖边':                #靖边随缘命名
+                print(ch)
                 table=data.sheets()[nowdate-1]
+
             else:
+                print(ch)
                 table=data.sheets()[nowdate-1]
+
 
             templist=[]
             for (temp,temp2) in zip(table._cell_types ,table._cell_values) :  #读取文件中数据

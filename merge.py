@@ -5,7 +5,7 @@ from xlrd import open_workbook
 from xlutils.copy import copy
 
 
-rootdir = 'F:/0/py_ribao/py_save/2月合并'
+rootdir = 'F:/0/py_ribao/py_save/合并'
 xls_result= xlwt.Workbook()
 sht1 = xls_result.add_sheet('Sheet1',cell_overwrite_ok=True)
 pathtable='F:\\0\\new_ribao\\报表\\merge.xls'
@@ -29,7 +29,7 @@ for xrange in range(33):
                 j=0
                 for numdata in num:
                     j=j+1
-                    sht1.write(xrange*64+i+1,j,numdata)
+                    sht1.write(xrange*8+i+1,j,numdata)
 xls_result.save(pathtable)
 
                # for irange,num in enumerate(table._cell_values):

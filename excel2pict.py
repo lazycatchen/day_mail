@@ -11,7 +11,7 @@ def e2p(pathpicture):
         time.sleep(0.3)
         wb=excel.workbooks.open(pathtable)     #打开文件，复制截图
         w_pic=wb.worksheets('Sheet2')
-        w_pic.Range('B2:F40').CopyPicture()
+        w_pic.Range('B1:F40').CopyPicture()
         w_pic.Paste(w_pic.Range('M1'))
         w_pic.Shapes('Picture 1').copy()
         time.sleep(0.3)      #给缓存一点时间，防止一闪即逝抓不到图
